@@ -1,12 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <!-- Head-->
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Static Template</title>
+    <meta charset="utf-8" />
+    <title>Teffi</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
+  <!--Body-->
+
   <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
+    <header>
+      <div class="nav-bar">
+        <nav title="Menu">
+          <ul class="main-menu">
+            <li><img class="logo" src="/images/Teffi.png" alt="logo" /></li>
+            <li class="menu-item">
+              <a class="menu-font" href="/index.html">Home </a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-font" href="#mid-container">Timer</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-font" href="#about">About</a>
+            </li>
+            <li>
+              <img
+                class="settings"
+                src="/images/settings-icon.png"
+                alt="settings"
+              />
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--Top-Container -->
+    <section>
+      <div class="top-container">
+        <div class="bg-filter">
+          <img class="clock" src="/images/Teffi.png" alt="teffi-clock" />
+
+          <h1 class="main-title">Teffi.</h1>
+          <h3>Study Like A Pro!</h3>
+        </div>
+      </div>
+    </section>
+
+    <!--Mid-Container -->
+
+    <section>
+      <div class="mid-container" id="mid-container">
+        <div class="timer-hud">
+          <span class="hud-heading"> Pomodoro</span>
+          <span class="hud-heading">Short Break</span>
+          <span class="hud-heading">Long Break</span>
+        </div>
+        <div class="tomato-timer"></div>
+        <div class="timer-controls">
+          <span class="control-start">Start</span>
+          <span class="control-stop">Stop</span>
+          <span class="control-reset">Reset</span>
+        </div>
+        <article class="about" id="about">
+          <h2>About</h2>
+          <div class="pomodoro-text" align="left">
+            Teffi is based on the Pomodoro timer technique, a time management
+            method developed by Francesco Cirillo in the late 1980s. The
+            technique uses a timer to break down work into intervals,
+            traditionally 25 minutes in length, separated by short breaks. Each
+            interval is known as a pomodoro, from the Italian word for 'tomato',
+            after the tomato-shaped kitchen timer that Cirillo used as a
+            university student.
+          </div>
+          <img
+            src="/images/tomato.jfif"
+            class="tomato-img"
+            alt="tomato-timer-image"
+          />
+        </article>
+      </div>
+    </section>
+
+    <!--Bottom-Container -->
+    <div class="bottom-container">
+      <br />
+      <p>
+        ©Teffi 2020 All rights reserved. | Proudly Designed by Akash Salian.
+      </p>
+      <br />
+    </div>
   </body>
 </html>
